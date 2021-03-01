@@ -227,6 +227,21 @@ h2::after{
 
 }
 
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #c0392b;
+    font-size: 120%;
+    margin-right: 10px;
+
+    /* Alineacion de iconos y texto */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+
+}
+
 /* ------------------------------------------ */
 /* ------------ SECTION PRODUCTS ------------ */
 /* ------------------------------------------ */
@@ -249,4 +264,71 @@ h2::after{
 .section-products div .prod-list img:hover{
     transform: scale(0.95);
     transition: transform 0.5s;
+}
+
+/* ------------------------------------------ */
+/* -------------- PROMOCIONES ---------------- */
+/* ------------------------------------------ */
+
+.section-promos{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+.columna{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.plan-box{
+    background-color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px #efefef;
+
+}
+
+.plan-box div ul{
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 90%;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;
+}
+
+.plan-price{
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #c0392b;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-daily{
+    font-size: 80%;
 }
