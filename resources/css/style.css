@@ -16,6 +16,7 @@ html{
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    scroll-behavior:smooth;
 }
 
 /* ------------------------------------------ */
@@ -147,7 +148,8 @@ h2::after{
 /* ------------------------------------------ */
 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block; /* elemento el linea, que puede tener un margin/padding y que no fuerza un line-break */
     padding: 10px 30px;
     font-weight: 300;
@@ -157,7 +159,8 @@ h2::after{
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
     background-color: #c0392b;
     border: 1px solid #c0392b;
     color: #fff;
@@ -176,7 +179,8 @@ h2::after{
 }
 
 .btn-full:hover,
-.btn-full:active{
+.btn-full:active,
+input[type=submit]{
     border: 1px solid #C71400;
 }
 
@@ -278,7 +282,7 @@ h2::after{
 
 .columna{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .plan-box{
@@ -286,7 +290,7 @@ h2::after{
     width: 90%;
     margin-left: 5%;
     border-radius: 5px;
-    box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #e9e6e6;
 
 }
 
@@ -312,6 +316,10 @@ h2::after{
     background-color: #fcfcfc;
 }
 
+.plan-box div:nth-child(2){
+    height: 45%;
+}
+
 .plan-box div:last-child{
     text-align: center;
     border: 0;
@@ -325,10 +333,176 @@ h2::after{
 }
 
 .plan-price span{
-    font-size: 30%;
+    font-size: 50%;
     font-weight: 300;
 }
 
 .plan-price-daily{
     font-size: 80%;
+}
+
+/* ------------------------------------------ */
+/* -------------- OPINIONES ---------------- */
+/* ------------------------------------------ */
+
+.section-opinions{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    
+}
+
+.container-opinions{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    margin-right: 15px;
+    height: 60%;
+}
+
+
+blockquote:before{
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* ------------------------------------------ */
+/* -------------- CONTACTO ---------------- */
+/* ------------------------------------------ */
+
+
+input[type=text],input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+
+  input[type=checkbox]{
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    margin-left: 20px;
+  }
+
+  input[type=submit] {
+    cursor: pointer;
+  }
+
+/* ------------------------------------------ */
+/* -------------- FOOTER ---------------- */
+/* ------------------------------------------ */
+
+footer{
+    background-color:#0c0100;
+    padding: 60px;
+}
+
+footer .row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.footer-nav{
+    float: left;
+}
+
+.social-nav{
+    float: right;
+}
+
+.footer-nav li,
+.social-nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.footer-nav a{
+    text-decoration: none;
+}
+
+.footer-nav li:last-child,
+.social-nav li:last-child{
+    margin: 0;
+}
+
+.social-nav li a:visited,
+.social-nav li a:link{
+    font-size: 180%;
+}
+
+.footer-nav li a:visited,
+.footer-nav li a:link,
+.social-nav li a:visited,
+.social-nav li a:link{
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+
+footer div p{
+    margin-top: 40px;
+    font-size: 90%;
+}
+
+.ion-social-facebook,
+.ion-social-instagram,
+.ion-social-twitter,
+.ion-social-youtube{
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:active,
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+
+.ion-social-instagram:active,
+.ion-social-instagram:hover{
+    color: #e95950;
+}
+
+.ion-social-twitter:active,
+.ion-social-twitter:hover{
+    color: #55acee;
+}
+
+.ion-social-youtube:active,
+.ion-social-youtube:hover{
+    color: #ff0000;
 }

@@ -16,6 +16,9 @@
     <meta name="author" content="Nazareno Martedi">
     <meta name="copyright" content="Wardust Nutrition S.A.">
     <link rel="shortcut icon" href="resources/img/iconito.png" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <meta property="og:title" content="Wardust - Suplementos deportivos">
     <meta property="og:description" content="Los mejores suplementos deportivos, importados directamente desde USA">
@@ -30,24 +33,24 @@
         <nav>
             <div class="row">
                 <img class="logo" src="resources/img/newicon3.png" alt="Wardust logo">
-                <ul class="main-nav">
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Promociones</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contenido</a></li>
-                    <li><a href="#">Contacto</a></li>
+                <ul class="main-nav animate__animated animate__fadeInRight">
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#promos">Promociones</a></li>
+                    <li><a href="#about_us">Nosotros</a></li>
+                    <li><a href="#clients">CLientes</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
         </nav>
 
         <div class="text-box">
-            <h1>Supera tus límites. <br> Como nunca antes imaginaste.</h1>
+            <h1 class="animate__animated animate__bounceInLeft">Supera tus límites. <br> Como nunca antes imaginaste.</h1>
             <a class="btn btn-full" href="#">Comprar</a>
             <a class="btn btn-ghost" href="#">Chat en línea</a>
         </div>
     </header>
 
-    <section class="section-wardust">
+    <section id="about_us" class="section-wardust">
         <div class="description">
             <h2>¿Hasta dónde eres capaz de llegar?</h2>
             <p class="wd-desc">Desde Wardust Fitness & Apparel te brindamos todo lo necesario para que lleves tus capacidades al siguiente nivel sin importar cual sea tu disciplina.</p>
@@ -74,7 +77,7 @@
         </div>
     </section>
 
-    <section class="section-products">
+    <section id="products" class="section-products">
         <div>
             <div class="prod-list">
                 <img src="resources/img/pr4.png" alt="">
@@ -88,10 +91,10 @@
         
     </section>
 
-    <section class="section-promos">
-        <section class="row">
-            <h2>¿Estás listo para un cambio radical?</h2>
-        </section>
+    <section id="promos" class="section-promos">
+        
+            <h2 class="row">¿Estás listo para un cambio radical?</h2>
+        
         <section class="row">
             <div class="columna">
                 <div class="plan-box">
@@ -151,6 +154,103 @@
             </div>
         </section>
     </section>
+
+    <section id="clients" class="section-opinions">
+    <div class="row">
+            <h2>Ellos ya vieron sus resultados</h2>
+        </div>
+
+        <div class="row container-opinions">
+            <div class="opinion">
+                <blockquote>
+                    Con los productos de Wardust en solo tres semanas fui capaz de ver resultados en mi cuerpo, eso sí, me encargué de acompañar el proceso con un entrenamiento intenso y una dieta adecuada.
+                </blockquote>
+                <cite><img src="resources/img/diego.jpg" alt="">Diego Pedraza</cite>
+            </div>
+            <div class="opinion">
+                <blockquote>
+                    Su sabor es increíble y su digestibilidad también. Altamente recomendable, pude ver incrementos en mi fuerza en cuestión de días, y cambios en mi cuerpo en solo semanas. Fabuloso.
+                </blockquote>
+                <cite><img src="resources/img/marcos.jpg" alt="">Marco Paredes</cite>
+            </div>
+            <div class="opinion">
+                <blockquote>
+                    Siempre tuve desconfianza de los suplementos, pero con Wardust es otro tema. Una vez que los probé ya no tuve dudas. Son productos excelentes y de calidad, ahora están en el día a día de mis entrenamientos y planificaciones.
+                </blockquote>
+                <cite><img src="resources/img/silvestre.jpg" alt="">Silvestre Estévez</cite>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <section id="contact" class="form">
+        <div class="row">
+            <h2>Hacenos llegar tu mensaje</h2>
+        </div>
+        <div class="row">
+            <form action="#" class="contact-form">
+                <div class="row">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="José Fernández" required>
+                </div>
+                <div class="row">
+                    <label for="email">Email</label>
+                    <input type="email" type="email" id="email" placeholder="jfernandez@ejemplo.com" required>
+                </div>
+                <div class="row">
+                    <label for="find-us">¿Cómo nos encontraste?</label>
+                    <select name="find-us" id="find-us">
+                        <option value="friend" selected>Me lo recomendó un amigo</option>
+                        <option value="social-media">Redes sociales</option>
+                        <option value="ads">Anuncios</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="news">Newsletter</label>
+                    <input type="checkbox" name="news" id="news" checked> Sí, por favor
+                </div>
+                <div>
+                    <label for="">Dejanos tu mensaje</label>
+                    <textarea name="message" id="" placeholder="Dejanos cualquier consulta u opinión"></textarea>
+                </div>
+                <div>
+                    <label for="&nbsp;"></label>
+                    <input type="submit" value="Enviar">
+                </div>
+
+
+
+            </form>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col-1">
+                <ul class="footer-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Noticias</a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul class="social-nav">
+                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                <li><a href="#"><i class="ion-social-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Copyright &copy; Wardust 2021 </p>
+        </div>
+    </footer>
 
 
 
