@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/queries.css">
     
     <!-- SEO -->
 
@@ -57,19 +59,22 @@
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col" data-aos="fade-up"
+            data-aos-duration="2000">
                 <i class="ion-heart icon-big"></i>
                 <h3>Cuida tu salud</h3>
                 <p>Suplementos nutricionales de la mas alta calidad, puestos a prueba en los laboratorios mas exigentes del mundo 
                     y testeados por atletas profesionales.</p>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up"
+            data-aos-duration="2000">
                 <i class="ion-flash icon-big"></i>
                 <h3>Mejora tu desempeño</h3>
                 <p>Consigue mejoras en fuerza y resistencia de hasta un 50%. Al acompañar nuestros productos con una dieta
                     balanceada, tus marcas personales verán un impresionante cambio en cuestión de semanas.</p>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up"
+            data-aos-duration="2000">
                 <i class="ion-calendar icon-big"></i>
                 <h3>Tómalos a diario</h3>
                 <p>Su facilidad digestiva y su sencillez de preparación hacen a nuestros productos aptos para consumirlos a diario en cualquier momento.</p>
@@ -77,13 +82,13 @@
         </div>
     </section>
 
-    <section id="products" class="section-products">
+    <section id="products" class="section-products" data-aos="zoom-out-up">
         <div>
             <div class="prod-list">
-                <img src="resources/img/pr4.png" alt="">
-                <img src="resources/img/pr5.png" alt="">
-                <img src="resources/img/pr6.png" alt="">
-                <img src="resources/img/pr8.png" alt="">
+                <img src="resources/img/pr4.png" alt="whey protein">
+                <img src="resources/img/pr5.png" alt="whey protein">
+                <img src="resources/img/pr6.png" alt="whey protein">
+                <img src="resources/img/pr8.png" alt="whey protein">
             </div>
         </div>
         </div>
@@ -97,7 +102,7 @@
         
         <section class="row">
             <div class="columna">
-                <div class="plan-box">
+                <div class="plan-box" data-aos="flip-left">
                     <div>
                         <h3>Espartano</h3>
                         <p class="plan-price">$5000 <span>/ mes</span></p>
@@ -115,7 +120,7 @@
                         <a href="#" class="btn btn-full">Comprar</a>
                     </div>
                 </div>
-                <div class="plan-box">
+                <div class="plan-box" data-aos="flip-left">
                     <div>
                         <h3>Atleta</h3>
                         <p class="plan-price">$3900 <span>/ mes</span></p>
@@ -133,7 +138,7 @@
                         <a href="#" class="btn btn-ghost">Comprar</a>
                     </div>
                 </div>
-                <div class="plan-box">
+                <div class="plan-box" data-aos="flip-left">
                     <div>
                         <h3>Aficionado</h3>
                         <p class="plan-price">$2900 <span>/ mes</span></p>
@@ -256,5 +261,10 @@
 
     
 </body>
+
 </html>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 

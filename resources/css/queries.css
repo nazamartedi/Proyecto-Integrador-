@@ -1,0 +1,286 @@
+
+/* Big tablet to 1200px - (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px){
+    .text-box{
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row{
+        padding: 0 2%;
+    }
+    
+    .section-products div .prod-list img{
+        height: 250px;
+    }
+
+    .section-promos h2{
+        margin-bottom: 50px;
+    }
+}
+
+/* Small tablet to big tablet - from 768 to 1023px */
+@media only screen and (max-width: 1023px){
+    
+    body, html { overflow-x:hidden; }
+    
+    body{
+        font-size: 18px;
+    }
+
+    section{
+        padding: 60px 0;
+    }
+
+    .section-wardust{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .section-products div .prod-list img{
+        height: 200px;
+    }
+    
+    .form{
+        width: 90%;
+    }
+
+
+
+
+}
+
+/* Phones smaller than the iPad - from 481 to 767px */
+@media only screen and (max-width: 767px){
+    body{
+        font-size: 16px;
+    }
+
+    section{
+        padding: 30px 0;
+    }
+
+    .row,
+    .text-box{
+        padding: 0 4%;
+    }
+
+
+    .main-nav{
+        display: none;
+    }
+
+
+    .main-nav{
+        float: left;
+        margin-top: 25px;
+        margin-left: 35px;
+    }
+
+    .main-nav li{
+        display: block;
+        border: 0;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .logo{
+        height: 40px;
+    }
+
+    
+    h1{
+        font-size: 180%;
+    }
+
+    h2{
+        font-size: 150%;
+    }
+
+    .wd-desc{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+
+    .section-wardust .row .col{
+        margin: 0 15px;
+    }
+
+    .section-wardust .row .col p{
+        font-size: 80%;
+        text-align: start;
+        line-height: 120%;
+     }
+
+     .section-wardust .description .wd-desc{
+        width: 90%;
+        text-align: justify;
+        
+    }
+
+    .section-products div .prod-list img{
+        height: 130px;
+    }
+
+    .plan-box{
+        margin-left: 3%;
+    
+    }
+    
+    .plan-box div ul{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 70%;
+    }
+
+    .plan-box:last-child .plan-price-daily{
+        margin-bottom: 14px;
+    }
+
+    .plan-price{
+        font-size: 158%;
+    }
+
+    .plan-price span{
+        font-size: 40%;
+        font-weight: 300;
+    }
+
+
+    .plan-price-daily{
+        font-size: 70%;
+    }
+
+    .btn-full,
+    .btn-ghost{
+        font-size: 85%;
+    }
+
+    blockquote{
+        font-size: 90%;
+    }
+
+    cite{
+        margin-top: 40px;
+        font-size: 65%;
+    }
+
+    .social-nav li a:visited,
+    .social-nav li a:link{
+    font-size: 140%;
+    }
+
+    footer div p{
+        font-size: 60%;
+    }
+
+    .footer-nav li{
+        font-size: 70%;
+        margin-right: 5px;
+    }
+
+}
+
+/* Small phones from 0 to 480px */
+@media only screen and (max-width: 480px){
+
+    section{
+        padding: 25px 0;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+
+    .wd-desc{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+
+    .section-wardust .row .col{
+        margin: 0 5px;
+    }
+
+
+    .section-products div .prod-list img{
+        height: 100px;
+    }
+
+    .plan-box{
+        width: 97%;
+    
+    }
+    
+    .plan-box div ul{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 57%;
+    }
+
+    .plan-box:last-child .plan-price-daily{
+        margin-bottom: 14px;
+    }
+
+    .plan-price{
+        font-size: 120%;
+    }
+
+    .plan-price span{
+        font-size: 40%;
+        font-weight: 300;
+    }
+
+
+    .plan-price-daily{
+        font-size: 70%;
+    }
+
+    .section-promos a{
+        font-size: 60%;
+    }
+
+    blockquote{
+        font-size: 73%;
+    }
+
+    cite{
+        margin-top: 40px;
+        font-size: 48%;
+    }
+
+    cite img{
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .social-nav li a:visited,
+    .social-nav li a:link{
+    font-size: 130%;
+    }
+
+    .footer-nav li,
+    .social-nav li{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+    footer div p{
+        font-size: 60%;
+    }
+
+    .footer-nav li{
+        font-size: 70%;
+        
+    }
+
+}
